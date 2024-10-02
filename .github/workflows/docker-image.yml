@@ -17,7 +17,7 @@ jobs:
         run: |
           docker version
           # 登录阿里云镜像仓库
-          docker login --username=${{ secrets.ALIYUN_REGISTRY_USER }} --password=${{ secrets.ALIYUN_REGISTRY_PASSWORD }} registry.us-east-1.aliyuncs.com
+          docker login --username=yiweiyuntian --password=CHUxue2005 registry.us-east-1.aliyuncs.com
           cd one-api
           # 使用Dockerfile构建镜像
           docker build . --file Dockerfile --tag registry.us-east-1.aliyuncs.com/yiweionline/onepai2:2.4.1
