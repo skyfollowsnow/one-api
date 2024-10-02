@@ -20,6 +20,7 @@ FROM golang:alpine AS builder2
 
 RUN apk add --no-cache g++
 
+
 ENV GO111MODULE=on \
     CGO_ENABLED=1 \
     GOOS=linux
